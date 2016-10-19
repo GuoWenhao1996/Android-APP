@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.guowh.myfirstapp.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <TextView
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:text="点我有惊喜"
+        android:layout_width="109dp"
+        android:layout_height="63dp"
+        android:id="@+id/button"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        android:layout_gravity="top|center_horizontal" />
+
+    <include layout="@layout/content_main"
+        android:id="@+id/include"
+         />
+
+    <TextView
+        android:visibility="invisible"
+        android:background="#000000"
+        android:textAlignment="center"
+        android:text="你有没有看到一个帅哥\n
+                                      ——made by 郭文浩"
+        android:textColor="#FFFFFF"
+        android:layout_width="372dp"
+        android:layout_height="478dp"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+</android.support.design.widget.CoordinatorLayout>
