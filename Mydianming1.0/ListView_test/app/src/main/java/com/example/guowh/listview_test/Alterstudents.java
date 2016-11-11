@@ -46,6 +46,7 @@ public class Alterstudents extends AppCompatActivity {
         b_chakan.setOnClickListener(new View.OnClickListener() {//创建监听
             @Override
             public void onClick(View view) {
+                ZP.setImageResource(R.drawable.pig);
                 _id = XH.getText().toString();
                 Cursor c = db.query("stulisttb",null, "id=?", new String[]{_id}, null, null, null);
                 if (c.moveToNext()) {
