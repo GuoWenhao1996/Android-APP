@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">抢红包</string>
+    <string name="service_name">郭大神帮你抢红包</string>
+    <string name="accessibility_description">启动抢红包服务，当前仅支持QQ。</string>
+</resources>
