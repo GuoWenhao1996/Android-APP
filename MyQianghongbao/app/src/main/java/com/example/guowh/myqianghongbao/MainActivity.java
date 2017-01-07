@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         switchPlugin.setOnClickListener(new View.OnClickListener() {//创建监听
             @Override
             public void onClick(View view) {
+                startActivity(mAccessibleIntent);
                 openAccessibilityServiceSettings();
             }
         });
